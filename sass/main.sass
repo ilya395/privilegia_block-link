@@ -1,6 +1,7 @@
 .main 
 	width: 100%
 	height: 100%
+	background-color: white
 //luck-event
 *
 	box-sizing: border-box
@@ -17,6 +18,11 @@
 	font-family: SFUIDisplay
 	src: url(../fonts/SFUIDisplay/SFUIDisplay-regular.ttf)
 	font-weight: 600
+
+@font-face
+	font-family: MontserratAlternates
+	src: url(../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf)
+	font-weight: normal
 
 
 .luck-event 
@@ -81,7 +87,7 @@
 	text-decoration: none
 	background-color: #b87e61
 	border-radius: 4px
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 6px 12px 0 rgba(0, 0, 0, 0.05)
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 6px 12px 0 rgba(0, 0, 0, 0.15)
 	border: solid 0.5px rgba(0, 0, 0, 0.05)
 	//background-color: rgba(255, 255, 255, 0)
 
@@ -155,7 +161,7 @@
 			bottom: 18px
 			left: 44px
 @media (min-width: 992px)
-	.uck-event__container
+	.luck-event__container
 		width: 960px
 @media (min-width: 1200px)
 	.work-area
@@ -164,3 +170,237 @@
 	.work-area
 		width: 1600px
 //luck-page
+.luck-page
+	width: 100%
+	height: auto
+	margin: 0 auto
+	padding: 
+		top: 110px
+		bottom: 110px
+.luck-page__container
+	margin: 0 auto
+	padding:
+		left: 15px
+		right: 15px
+.luck-page__grid
+	display: grid
+	//grid-template-columns: 1fr 1fr 1fr 1fr
+	//grid-template-rows: 155px 350px 350px
+	grid-template-areas: "luck-page__title ... ... ..." "luck-page__text luck-page__text luck-page__picture luck-page__picture" "luck-page__text luck-page__text luck-page__picture luck-page__picture"
+.luck-page__title
+	grid-area: luck-page__title
+.luck-page__text
+	grid-area: luck-page__text
+.luck-page__picture
+	grid-area: luck-page__picture
+
+.luck-page__grid
+	margin:
+		left: -15px
+		right: -15px
+
+.luck-page__picture
+	padding:
+		left: 15px
+		right: 15px
+
+.luck-page__bg-img
+	width: 100%
+	height: 100%
+	background-image: url(../img/b.jpg)
+	background-repeat: no-repeat
+	background-position: center top
+	background-size: cover//auto 100%
+
+.luck-page__title
+	padding:
+		left: 15px
+		right: 15px
+
+.luck-page__main-title
+	font-family: Oswald
+	font-size: 45px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #b87e61
+
+.luck-page__text
+	padding:
+		left: 15px
+		right: 15px
+
+.luck-page__text-title
+	font-family: Oswald
+	font-size: 26px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #b87e61
+	margin:
+		bottom: 14px
+
+.luck-page__text-sub-title
+	font-family: MontserratAlternates
+	font-size: 18px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: black
+	margin:
+		bottom: 37px
+
+.luck-page__paragraph
+	font-family: MontserratAlternates
+	font-size: 14px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: black
+	margin:
+		bottom: 15px
+
+.luck-page__form
+	margin:
+		right: 35%
+		top: 45px
+
+.luck-page__form-field
+	margin:
+		bottom: 18px
+	width: 100%
+
+.luck-page__field
+	width: 100%
+	opacity: 0.3
+	font-family: SFUIDisplay
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: black
+	padding:
+		top: 18px
+		right: 192px
+		bottom: 16px
+		left: 15px
+	border-radius: 4px
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 6px 12px 0 rgba(0, 0, 0, 0.15)
+	border: solid 0.5px rgba(0, 0, 0, 0.05)
+	background-color: white
+
+.luck-page__form-btn
+	font-family: SFUIDisplay
+	font-size: 18px
+	font-weight: 600
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: white
+	border-radius: 4px
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 6px 12px 0 rgba(0, 0, 0, 0.15)
+	border: solid 0.5px rgba(0, 0, 0, 0.05)
+	background-color: #b87e61
+	padding:
+		top: 14px
+		bottom: 18px
+	width: 100%
+
+.luck-page__doc-link
+	font-family: SFUIDisplay
+	font-size: 18px
+	font-weight: 600
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: rgba(0, 0, 0, 0.35)
+	text-decoration: none
+.luck-page__doc-link
+	&:hover
+		color: #b87e61
+
+/*
+ * @media
+ */
+@media (max-width: 320px)
+	.luck-page__container
+		width: auto
+	.luck-page__grid
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: 95px auto 700px
+		grid-row-gap: 60px
+		grid-template-areas: "luck-page__title" "luck-page__text" "luck-page__picture"
+	.luck-page__form
+		margin:
+			right: 0px
+
+@media (min-width: 320px)
+	.luck-page__container
+		width: auto
+	.luck-page__grid
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: 95px auto 700px
+		grid-row-gap: 60px
+		grid-template-areas: "luck-page__title" "luck-page__text" "luck-page__picture"
+	.luck-page__form
+		margin:
+			right: 0px
+
+@media (min-width: 576px)
+	.luck-page__container
+		width: 540px
+	.luck-page__grid
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: 95px auto 700px
+		grid-row-gap: 60px
+		grid-template-areas: "luck-page__title" "luck-page__text" "luck-page__picture"
+	.luck-page__form
+		margin:
+			right: 0px
+
+@media (min-width: 768px)
+	.luck-page__container
+		width: 720px
+	.luck-page__grid
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: 155px 350px 350px 350px 350px
+		grid-row-gap: 0px
+		grid-template-areas: "luck-page__title" "luck-page__text" "luck-page__text" "luck-page__picture" "luck-page__picture"
+	.luck-page__form
+		margin:
+			right: 35%
+
+@media (min-width: 992px)
+	.luck-page__container
+		width: 960px
+	.luck-page__grid
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 155px 350px 350px
+		grid-template-areas: "luck-page__title ..." "luck-page__text luck-page__picture" "luck-page__text luck-page__picture"
+
+@media (min-width: 1200px)
+	.luck-page__container
+		width: 1140px
+
+@media (min-width: 1920px)
+	.luck-page__container
+		width: 1600px
